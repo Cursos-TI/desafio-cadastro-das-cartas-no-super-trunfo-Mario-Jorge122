@@ -75,12 +75,19 @@ int main() {
     scanf("%d", &pontos_turisticos2);
 
     //calculo da densidade populacional
-    densidade_populacional1 = populacao1 / area1;
-    densidade_populacional2 = populacao2 / area2;
+    //densidade_populacional1 = populacao1 / area1;
+    //densidade_populacional2 = populacao2 / area2;
+    // Alterando a densidade populacional para garantir precisão
+    densidade_populacional1 = (float) populacao1 / area1;
+    densidade_populacional2 = (float) populacao2 / area2;
 
     //calculo do PIB per Capita
-    pib_per_capita1 = pib1 * 1e9 / populacao1;  // Converte o PIB de bilhões para reais
-    pib_per_capita2 = pib2 * 1e9 /populacao2;  // Converte o PIB de bilhões para reais
+    //pib_per_capita1 = pib1 * 1e9 / populacao1;  // Converte o PIB de bilhões para reais
+    //pib_per_capita2 = pib2 * 1e9 /populacao2;  // Converte o PIB de bilhões para reais
+    // Alterando a densidade populacional para garantir precisão
+    // Garantindo precisão na divisão do PIB per capita
+    pib_per_capita1 = pib1 * 1e9 / (double) populacao1;
+    pib_per_capita2 = pib2 * 1e9 / (double) populacao2;
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
@@ -97,7 +104,7 @@ int main() {
      printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional1);
      printf("PIB per Capita: %.2f reais\n", pib_per_capita1);
      printf("\n");
-     
+
      printf("Carta 2 cadastrada:\n");
      printf("Estado: %c\n", estado2);
      printf("Código da carta: %s\n", codigo2);
