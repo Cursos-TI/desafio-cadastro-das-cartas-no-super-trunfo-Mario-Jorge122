@@ -138,6 +138,7 @@ int main() {
      printf("\n");
 
      //Exibição dos resultados das comparações
+     //Essa linha ainda é necessária? Eu acho que não!
      printf("Resultado das Comparações: \n");
      printf("População: %d\n", vencedor_populacao);
      printf("Área: %d\n", vencedor_area);
@@ -154,69 +155,65 @@ int main() {
      printf("Carta 1: %u\n", populacao1);
      printf("Carta 2: %u\n", populacao2);
      if (populacao1 > populacao2){
-        printf("Resultado: Carta 1 venceu: \n");
+        printf("Resultado: Carta 1 venceu! \n");
      } else {
-        printf("Resultado: Carta 2 venceu: \n");
+        printf("Resultado: Carta 2 venceu! \n");
      }
      printf("\n");
      printf("Atributo Área: \n");
      printf("Carta 1: %.2f km²\n", area1);
      printf("Carta 2: %.2f km²\n", area2);
      if (area1 > area2){
-        printf("Resultado: Carta 1 venceu: \n");
+        printf("Resultado: Carta 1 venceu! \n");
      } else {
-        printf("Resultado: Carta 2 venceu: \n");
+        printf("Resultado: Carta 2 venceu! \n");
      }
      printf("\n");
      printf("Atributo PIB: \n");
      printf("Carta 1: %.2lf bilhões de reais\n", pib1);
      printf("Carta 2: %.2lf bilhões de reais\n", pib2);
      if (pib1 > pib2){
-        printf("Resultado: Carta 1 venceu: \n");
+        printf("Resultado: Carta 1 venceu! \n");
      } else {
-        printf("Resultado: Carta 2 venceu: \n");
+        printf("Resultado: Carta 2 venceu! \n");
      }
      printf("\n");
      printf("Atributo Pontos Turísticos: \n");
      printf("Carta 1: %d\n", pontos_turisticos1);
      printf("Carta 2: %d\n", pontos_turisticos2);
      if (pontos_turisticos1 > pontos_turisticos2){
-        printf("Resultado: Carta 1 venceu: \n");
+        printf("Resultado: Carta 1 venceu! \n");
      } else {
-        printf("Resultado: Carta 2 venceu: \n");
+        printf("Resultado: Carta 2 venceu! \n");
      }
      printf("\n");
      printf("Atributo Densidade Populacional: \n");
      printf("Carta 1: %.2f hab/km²\n", densidade_populacional1);
      printf("Carta 2: %.2f hab/km²\n", densidade_populacional2);
      if (densidade_populacional1 < densidade_populacional2){
-        printf("Resultado: Carta 1 venceu: \n");
-     } else{
-        printf("Resultado: Carta 2 venceu: \n");
+        printf("Resultado: Carta 1 venceu! \n");
+     } else {
+      printf("Resultado: Carta 2 venceu! \n");
+     }
+        
      printf("\n");
      printf("Atributo PIB per Capita: \n");
      printf("Carta 1: %.2f reais\n", pib_per_capita1);
      printf("Carta 2: %.2f reais\n", pib_per_capita2);
      if (pib_per_capita1 > pib_per_capita2){
-        printf("Resultado: Carta 1 venceu: \n");
+        printf("Resultado: Carta 1 venceu! \n");
      } else {
-        printf("Resultado: Carta 2 venceu: \n");
+        printf("Resultado: Carta 2 venceu! \n");
      }
      printf("\n");
      printf("Atributo Super Poder: \n");
      printf("Carta 1: %.2f\n", super_poder1);
      printf("Carta 2: %.2f\n", super_poder2);
      if (super_poder1 > super_poder2){
-        printf("Resultado: Carta 1 venceu: \n");
+        printf("Resultado: Carta 1 venceu! \n");
      } else {
-        printf("Resultado: Carta 2 venceu: \n");
+        printf("Resultado: Carta 2 venceu! \n");
      }
-
-
-     
-     
-
-
      //exemplo para as saídas
      //Carta 1:
      //Estado: A
